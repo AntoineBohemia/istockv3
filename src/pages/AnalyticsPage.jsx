@@ -11,20 +11,23 @@ import AIPoweredInsights from "../components/analytics/AIPoweredInsights";
 const AnalyticsPage = () => {
   return (
     <div className="flex-1 overflow-auto relative z-10 bg-gray-900">
-      <Header title={"Statistiques"} />
+      <Header title={"Acrylique blanc"} />
 
       <main className="max-w-7xl mx-auto py-6 px-4 lg:px-8">
         <OverviewCards />
         <RevenueChart />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-          <ChannelPerformance />
           <ProductPerformance />
-          <UserRetention />
-          <CustomerSegmentation />
+          <div>
+            <p>historique technicien</p>
+          </div>
+          <div>
+            <p>Infos supp</p>
+            <p>Fournisseur</p>
+            <p>Effectuer une commande</p>
+          </div>
         </div>
-
-        <AIPoweredInsights />
       </main>
     </div>
   );

@@ -12,13 +12,13 @@ import {
 } from "recharts";
 
 const revenueData = [
-  { month: "Jan", stock: 40, target: 38 },
-  { month: "Feb", stock: 30, target: 32 },
-  { month: "Mar", stock: 50, target: 45 },
-  { month: "Apr", stock: 45, target: 42 },
-  { month: "May", stock: 60, target: 55 },
-  { month: "Jun", stock: 55, target: 58 },
-  { month: "Jul", stock: 70, target: 65 },
+  { month: "Jan", stock: 40 },
+  { month: "Feb", stock: 30 },
+  { month: "Mar", stock: 50 },
+  { month: "Apr", stock: 45 },
+  { month: "May", stock: 60 },
+  { month: "Jun", stock: 55 },
+  { month: "Jul", stock: 70 },
 ];
 
 const RevenueChart = () => {
@@ -66,13 +66,6 @@ const RevenueChart = () => {
               dataKey="stock"
               stroke="#8B5CF6"
               fill="#8B5CF6"
-              fillOpacity={0.3}
-            />
-            <Area
-              type="monotone"
-              dataKey="target"
-              stroke="#10B981"
-              fill="#10B981"
               fillOpacity={0.3}
             />
           </AreaChart>

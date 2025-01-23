@@ -65,7 +65,6 @@ const OverviewCards = () => {
             <span className="ml-1 text-sm font-medium">
               {Math.abs(item.change)}%
             </span>
-            <span className="ml-2 text-sm text-gray-400">vs last period</span>
           </div>
         </motion.div>
       ))}

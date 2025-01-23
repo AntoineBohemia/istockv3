@@ -28,7 +28,7 @@ const SalesTrendChart = () => {
       transition={{ delay: 0.3 }}
     >
       <h2 className="text-xl font-semibold text-gray-100 mb-4">
-        Stock par produit
+        Stock par catégorie
       </h2>
       <div style={{ width: "100%", height: 300 }}>
         <ResponsiveContainer>
