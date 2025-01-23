@@ -10,18 +10,18 @@ import {
 import { motion } from "framer-motion";
 
 const salesData = [
-  { name: "Jul", global: 85 },
-  { name: "Aug", global: 82 },
-  { name: "Sep", global: 87 },
-  { name: "Oct", global: 78 },
-  { name: "Nov", global: 65 },
-  { name: "Dec", global: 65 },
-  { name: "Jan", global: 66 },
-  { name: "Feb", global: 45 },
-  { name: "Mar", global: 40 },
-  { name: "Apr", global: 39 },
-  { name: "May", global: 30 },
-  { name: "Jun", global: 65 },
+  { name: "Jul", montant: 8500 },
+  { name: "Aug", montant: 8200 },
+  { name: "Sep", montant: 8700 },
+  { name: "Oct", montant: 7800 },
+  { name: "Nov", montant: 6500 },
+  { name: "Dec", montant: 6500 },
+  { name: "Jan", montant: 6600 },
+  { name: "Feb", montant: 4500 },
+  { name: "Mar", montant: 4000 },
+  { name: "Apr", montant: 3900 },
+  { name: "May", montant: 3000 },
+  { name: "Jun", montant: 6500 },
 ];
 
 const SalesOverviewChart = () => {
@@ -33,7 +33,7 @@ const SalesOverviewChart = () => {
       transition={{ delay: 0.2 }}
     >
       <h2 className="text-lg font-medium mb-4 text-gray-100">
-        Evolution du stock global
+        Evolution du stock global (en €)
       </h2>
 
       <div className="h-80">
@@ -44,7 +44,7 @@ const SalesOverviewChart = () => {
             <YAxis
               stroke="#D5D8E5"
               domain={[1, 10]}
-              ticks={[0, 25, 50, 75, 100]}
+              ticks={[0, 2500, 5000, 7500, 10000]}
             />
 
             <Tooltip
@@ -56,7 +56,7 @@ const SalesOverviewChart = () => {
             />
             <Line
               type="monotone"
-              dataKey="global"
+              dataKey="montant"
               stroke="#6366F1"
               strokeWidth={3}
               dot={{ fill: "#6366F1", strokeWidth: 2, r: 6 }}

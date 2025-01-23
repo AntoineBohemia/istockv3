@@ -10,6 +10,7 @@ const PRODUCT_DATA = [
     price: 180.3,
     stock: 23,
     sales: 18,
+    status: "à restocker",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const PRODUCT_DATA = [
     price: 15.82,
     stock: 24,
     sales: 23,
+    status: "à restocker",
   },
   {
     id: 3,
@@ -34,6 +36,7 @@ const PRODUCT_DATA = [
     price: 1390.74,
     stock: 305,
     sales: 253,
+    status: "à restocker",
   },
   {
     id: 5,
@@ -42,6 +45,7 @@ const PRODUCT_DATA = [
     price: 676.28,
     stock: 145,
     sales: 101,
+    status: "à restocker",
   },
 ];
 
@@ -103,6 +107,7 @@ const ProductsTable = () => {
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">
                 Seuil d'alerte
               </th>
+
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">
                 Actions
               </th>
@@ -118,10 +123,9 @@ const ProductsTable = () => {
                 transition={{ duration: 0.3 }}
               >
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-100 flex gap-2 items-center">
-                  <img
-                    src="https://images.unsplash.com/photo-1627989580309-bfaf3e58af6f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2lyZWxlc3MlMjBlYXJidWRzfGVufDB8fDB8fHww"
+                  <div
                     alt="Product img"
-                    className="size-10 rounded-full"
+                    className="size-10 rounded-full bg-gray-400"
                   />
                   {product.name}
                 </td>

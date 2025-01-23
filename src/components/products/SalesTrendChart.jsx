@@ -11,12 +11,12 @@ import {
 } from "recharts";
 
 const salesData = [
-  { month: "Jan", stock: 4000 },
-  { month: "Feb", stock: 3000 },
-  { month: "Mar", stock: 5000 },
-  { month: "Apr", stock: 4500 },
-  { month: "May", stock: 6000 },
-  { month: "Jun", stock: 5500 },
+  { month: "Jan", stock: 40 },
+  { month: "Feb", stock: 30 },
+  { month: "Mar", stock: 50 },
+  { month: "Apr", stock: 45 },
+  { month: "May", stock: 60 },
+  { month: "Jun", stock: 55 },
 ];
 
 const SalesTrendChart = () => {
@@ -28,7 +28,7 @@ const SalesTrendChart = () => {
       transition={{ delay: 0.3 }}
     >
       <h2 className="text-xl font-semibold text-gray-100 mb-4">
-        Stock par catégorie
+        Stock de Revêtements de sols
       </h2>
       <div style={{ width: "100%", height: 300 }}>
         <ResponsiveContainer>
