@@ -11,7 +11,7 @@ import ProductsTable from "../components/products/ProductsTable";
 const ProductsPage = () => {
   return (
     <div className="flex-1 overflow-auto relative z-10">
-      <Header title="Products" />
+      <Header title="Produits" />
 
       <main className="max-w-7xl mx-auto py-6 px-4 lg:px-8">
         {/* STATS */}
@@ -22,27 +22,27 @@ const ProductsPage = () => {
           transition={{ duration: 1 }}
         >
           <StatCard
-            name="Total Products"
+            name="Total de produits"
             icon={Package}
-            value={1234}
+            value={36}
             color="#6366F1"
           />
           <StatCard
-            name="Top Selling"
+            name="Stock bon"
             icon={TrendingUp}
-            value={89}
+            value={30}
             color="#10B981"
           />
           <StatCard
-            name="Low Stock"
+            name="Stock faible"
             icon={AlertTriangle}
-            value={23}
+            value={5}
             color="#F59E0B"
           />
           <StatCard
-            name="Total Revenue"
+            name="Stock critique"
             icon={DollarSign}
-            value={"$543,210"}
+            value={"1"}
             color="#EF4444"
           />
         </motion.div>

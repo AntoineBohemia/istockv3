@@ -1,42 +1,39 @@
 import { motion } from "framer-motion";
 import {
-  LineChart,
-  Line,
+  BarChart,
+  Bar,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from "recharts";
 
-const dailyOrdersData = [
-  { date: "07/01", orders: 45 },
-  { date: "07/02", orders: 52 },
-  { date: "07/03", orders: 49 },
-  { date: "07/04", orders: 60 },
-  { date: "07/05", orders: 55 },
-  { date: "07/06", orders: 58 },
-  { date: "07/07", orders: 62 },
+const dailySalesData = [
+  { name: "Mon", entrees: 1000 },
+  { name: "Tue", entrees: 1200 },
+  { name: "Wed", entrees: 900 },
+  { name: "Thu", entrees: 1100 },
+  { name: "Fri", entrees: 1300 },
+  { name: "Sat", entrees: 1600 },
+  { name: "Sun", entrees: 1400 },
 ];
 
-const DailyOrders = () => {
+const DailySalesTrend02 = () => {
   return (
     <motion.div
       className="bg-gray-800 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-gray-700"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.2 }}
+      transition={{ delay: 0.4 }}
     >
-      <h2 className="text-xl font-semibold text-gray-100 mb-4">
-        Commandes passés
-      </h2>
+      <h2 className="text-xl font-semibold text-gray-100 mb-4">Entrées</h2>
 
       <div style={{ width: "100%", height: 300 }}>
         <ResponsiveContainer>
-          <LineChart data={dailyOrdersData}>
+          <BarChart data={dailySalesData}>
             <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
-            <XAxis dataKey="date" stroke="#9CA3AF" />
+            <XAxis dataKey="name" stroke="#9CA3AF" />
             <YAxis stroke="#9CA3AF" />
             <Tooltip
               contentStyle={{
@@ -45,17 +42,11 @@ const DailyOrders = () => {
               }}
               itemStyle={{ color: "#E5E7EB" }}
             />
-            <Legend />
-            <Line
-              type="monotone"
-              dataKey="orders"
-              stroke="#8B5CF6"
-              strokeWidth={2}
-            />
-          </LineChart>
+            <Bar dataKey="entrees" fill="#10B981" />
+          </BarChart>
         </ResponsiveContainer>
       </div>
     </motion.div>
   );
 };
-export default DailyOrders;
+export default DailySalesTrend02;

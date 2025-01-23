@@ -9,11 +9,11 @@ import {
 } from "recharts";
 
 const categoryData = [
-  { name: "Electronics", value: 4500 },
-  { name: "Clothing", value: 3200 },
-  { name: "Home & Garden", value: 2800 },
-  { name: "Books", value: 2100 },
-  { name: "Sports & Outdoors", value: 1900 },
+  { name: "Revêtement Mural", value: 45 },
+  { name: "Revêtement Sol", value: 32 },
+  { name: "Peinture", value: 28 },
+  { name: "Préparation Support", value: 21 },
+  { name: "Protection & Nettoyage", value: 19 },
 ];
 
 const COLORS = ["#6366F1", "#8B5CF6", "#EC4899", "#10B981", "#F59E0B"];
@@ -27,7 +27,7 @@ const CategoryDistributionChart = () => {
       transition={{ delay: 0.3 }}
     >
       <h2 className="text-lg font-medium mb-4 text-gray-100">
-        Category Distribution
+        Répartition par Catégorie
       </h2>
       <div className="h-80">
         <ResponsiveContainer width={"100%"} height={"100%"}>
