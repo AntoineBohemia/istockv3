@@ -10,13 +10,13 @@ import {
 } from "recharts";
 
 const dailySalesData = [
-  { name: "Mon", entrees: 1000 },
-  { name: "Tue", entrees: 1200 },
-  { name: "Wed", entrees: 900 },
-  { name: "Thu", entrees: 1100 },
-  { name: "Fri", entrees: 1300 },
-  { name: "Sat", entrees: 1600 },
-  { name: "Sun", entrees: 1400 },
+  { name: "Juin", entrees: 10 },
+  { name: "Juil", entrees: 12 },
+  { name: "Août", entrees: 9 },
+  { name: "Sept", entrees: 11 },
+  { name: "Oct", entrees: 13 },
+  { name: "Nov", entrees: 16 },
+  { name: "Dec", entrees: 14 },
 ];
 
 const DailySalesTrend02 = () => {

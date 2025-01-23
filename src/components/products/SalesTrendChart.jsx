@@ -11,12 +11,12 @@ import {
 } from "recharts";
 
 const salesData = [
-  { month: "Jan", sales: 4000 },
-  { month: "Feb", sales: 3000 },
-  { month: "Mar", sales: 5000 },
-  { month: "Apr", sales: 4500 },
-  { month: "May", sales: 6000 },
-  { month: "Jun", sales: 5500 },
+  { month: "Jan", stock: 4000 },
+  { month: "Feb", stock: 3000 },
+  { month: "Mar", stock: 5000 },
+  { month: "Apr", stock: 4500 },
+  { month: "May", stock: 6000 },
+  { month: "Jun", stock: 5500 },
 ];
 
 const SalesTrendChart = () => {
@@ -46,7 +46,7 @@ const SalesTrendChart = () => {
             <Legend />
             <Line
               type="monotone"
-              dataKey="sales"
+              dataKey="stock"
               stroke="#8B5CF6"
               strokeWidth={2}
             />

@@ -29,13 +29,13 @@ const OverviewPage = () => {
           <StatCard
             name="Nombres de techniciens"
             icon={Users}
-            value="1,234"
+            value="42"
             color="#8B5CF6"
           />
           <StatCard
             name="Nombres de produits"
             icon={ShoppingBag}
-            value="567"
+            value="56"
             color="#EC4899"
           />
           <StatCard

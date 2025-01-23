@@ -8,10 +8,10 @@ import OrderDistribution from "../components/orders/OrderDistribution";
 import OrdersTable from "../components/orders/OrdersTable";
 
 const orderStats = {
-  totalOrders: "1,234",
-  pendingOrders: "56",
-  completedOrders: "1,178",
-  totalRevenue: "$8,765",
+  totalOrders: "34",
+  pendingOrders: "4",
+  completedOrders: "30",
+  totalRevenue: "$4,765",
 };
 
 const OrdersPage = () => {
@@ -45,7 +45,7 @@ const OrdersPage = () => {
             color="#10B981"
           />
           <StatCard
-            name="Total Revenue"
+            name="Dépenses total"
             icon={DollarSign}
             value={orderStats.totalRevenue}
             color="#EF4444"

@@ -11,11 +11,11 @@ import {
 import { motion } from "framer-motion";
 
 const productPerformanceData = [
-  { name: "Jun", stock: 4000, entrees: 2400, sorties: 2400 },
-  { name: "Jul", stock: 3000, entrees: 1398, sorties: 2210 },
-  { name: "Aug", stock: 2000, entrees: 9800, sorties: 2290 },
-  { name: "Sep", stock: 2780, entrees: 3908, sorties: 2000 },
-  { name: "Oct", stock: 1890, entrees: 4800, sorties: 2181 },
+  { name: "Jun", stock: 40, entrees: 24, sorties: 24 },
+  { name: "Jul", stock: 30, entrees: 13, sorties: 22 },
+  { name: "Aug", stock: 20, entrees: 98, sorties: 22 },
+  { name: "Sep", stock: 27, entrees: 39, sorties: 20 },
+  { name: "Oct", stock: 18, entrees: 48, sorties: 21 },
 ];
 
 const ProductPerformance = () => {
